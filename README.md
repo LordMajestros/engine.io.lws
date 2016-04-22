@@ -8,7 +8,7 @@
 cross-browser/cross-device bi-directional communication layer for
 [Socket.IO](http://github.com/socketio/socket.io).
 
-#### This is a port of engine.io from ws(https://github.com/websockets/ws) to lws(https://github.com/NodeCedu/node-lws) does not support SSL as lws does not currenty support ssl
+#### This is a port of engine.io from ws(https://github.com/websockets/ws) to lws(https://github.com/NodeCedu/node-lws). It does not support SSL as lws does not currently support SSL.
 
 ## How to use
 

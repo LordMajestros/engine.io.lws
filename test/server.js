@@ -1143,7 +1143,6 @@ describe('server', function () {
       var opts = { allowUpgrades: true};
       var engine = listen(opts, function(port) {
         var socket = new eioc.Socket('ws://localhost:%d'.s(port));
-        //var socket = new WebSocket('ws://localhost:%d'.s(port));
 
         engine.on('connection', function (conn) {
           conn.send(binaryData);
@@ -1364,7 +1363,6 @@ describe('server', function () {
 
       var opts = {
         allowUpgrades: true,
-        //transports: ['websocket'],
         pingInterval: 200,
         pingTimeout: 100
       };

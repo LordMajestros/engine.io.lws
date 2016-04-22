@@ -66,6 +66,7 @@ describe('engine', function () {
       server.listen(function () {
         var uri = 'http://localhost:%d/engine.io/default/'.s(server.address().port);
         request.get(uri, function (res) {
+          //console.log(res);
           expect(res.status).to.be(400);
           expect(res.body.code).to.be(0);
           expect(res.body.message).to.be('Transport unknown');

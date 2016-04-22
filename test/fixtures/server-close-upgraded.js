@@ -6,5 +6,6 @@ var engine = listen(function (port) {
   socket.on('upgrade', function() {
     engine.httpServer.close();
     engine.close();
+    engine.ws.close();
   });
 });
